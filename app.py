@@ -4,7 +4,7 @@ import pandas as pd
 from fancyimpute import KNN
 from flask import Flask, request, jsonify
 
-app = Flask('spawner')
+app = Flask('knn')
 
 
 @app.route('/knn', methods=['POST'])
