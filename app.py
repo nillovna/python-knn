@@ -42,7 +42,7 @@ if __name__ == '__main__':
         temp_dir = os.environ.get('Temp')
     else:
         temp_dir = '/tmp'
-    pid = open(os.path.join(temp_dir, 'scaler_pid.txt'), 'w')
+    pid = open(os.path.join(temp_dir, 'knn_pid.txt'), 'w')
     pid.write(str(os.getpid()))
     pid.close()
 
