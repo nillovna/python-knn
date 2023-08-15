@@ -28,7 +28,6 @@ def knn():
     data_out = KNN(k=neighbours).fit_transform(data)
 
     data_out = pd.DataFrame(data_out, columns=columns)
-    data_out = data_out[[8, 9]]
     data_out = data_out[impute_columns]
     data_dict = dict()
     for col in data_out.columns:
